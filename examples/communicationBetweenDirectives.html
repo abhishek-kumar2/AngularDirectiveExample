@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="commBetweenDirecApp">
+    <main-element star1>Click to view star counts</main-element>
+    <br><br><br>
+    <main-element star2>Click to view star counts</main-element>
+    <br><br><br>
+    <main-element star3>Click to view star counts</main-element>
+    <br><br><br>
+    <main-element star1 star5>Click to view star counts</main-element>
+    <br><br><br>
+    <main-element star3 star4>Click to view star counts</main-element>
+
+<script src="../vender/angular/angular.min.js"></script>
+<script src="../js/communicationBetweenDirectives.js"></script>
+
+<style>
+    main-element {
+        background-color: aquamarine;
+    }
+
+    main-element.star {
+        background-color: darkorange;
+        padding-left: 30px;
+    }
+</style>
+</body>
+</html>
