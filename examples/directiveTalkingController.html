@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="talkingToCtrlApp">
+    <div ng-controller="talkCtrl">
+        <div enter-to-call-do-something="doSomething()">
+            click to call do something...
+        </div>
+        <br><br>
+        <div enter-to-call-do-something="cantDoAnything()">
+            click to call cont do anything...
+        </div>
+    </div>
+
+<script src="../vender/angular/angular.min.js"></script>
+<script src="../js/directiveTalkingController.js"></script>
+
+<style>
+    div {
+        background-color: aqua;
+        height: 25px;
+    }
+</style>
+</body>
+</html>
