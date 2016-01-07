@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <title>directive Basic Behavior</title>
 </head>
-<body ng-app="basicBehaviourApp">
-    <div directive-basic-behavior>Basic Behavior test mouse over and out</div>
+<body ng-app="basicBehaviorApp">
+    <div directive-basic-behavior="changeColor">Basic Behavior test mouse over and out</div>
 
 <script src="../vender/angular/angular.min.js"></script>
 <script src="../js/directiveBasicBehavior.js"></script>
+
+<style>
+    div {
+        background-color: red;
+        width: auto;
+        height: 30px;
+    }
+    div.changeColor {
+        background-color: green;
+    }
+</style>
 </body>
 </html>
