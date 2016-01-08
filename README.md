@@ -8,5 +8,5 @@ A full functional angular directive example
 5. communicationBetweenDirectives.html  => Communication between directives example
 6. isolateScope.html                    => Isolation of scope with directives examples
 7. isolatedScope@.html                  => Isolated scope using @ example
-7. shoppingCart.html	                => Shopping cart example using directive
+8. shoppingCart.html	                => Shopping cart example using directive
 
