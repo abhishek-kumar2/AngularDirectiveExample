@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Complete</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body ng-app="autoCompApp">
+    <div class="container">
+        <div ng-controller="autoCompCtrl">
+            <div class="form-group" style="margin-bottom:0;">
+                <label for="itemSearch">Item Search</label>
+                <input type="text" class="form-control" id="itemSearch" placeholder="Item search - altest 3 character required" ng-model="searchText">
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="result in results | filter:searchText">
+                    <auto-complete search-title="{{result.title}}" search-img="{{result.img}}" search-des="{{result.des}}" search-text="{{searchText}}"></auto-complete>
+                </li>
+            </ul>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../vender/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

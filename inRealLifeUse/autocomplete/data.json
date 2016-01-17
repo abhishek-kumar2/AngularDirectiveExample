@@ -1,0 +1,12 @@
+[
+  {
+    img:"img/actNow.jpg",
+    title:"Act Now",
+    des:"Description of act now"
+  },
+  {
+    img:"img/cover.jpeg",
+    title:"Cover",
+    des:"Description of cover"
+  }
+]
